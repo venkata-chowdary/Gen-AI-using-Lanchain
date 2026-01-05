@@ -20,4 +20,7 @@ doc_embs= embeddings.embed_documents(documents)
 #use cosine similarity to find the most similar document
 from sklearn.metrics.pairwise import cosine_similarity
 similarities = cosine_similarity([query_emb], doc_embs)
-print("Similarities:", similarities) 
+print("Similarities:", similarities)
+
+
+#these vectors can now be stored and used in a vector database for similarity search
